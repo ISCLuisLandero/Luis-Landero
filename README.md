@@ -1,6 +1,6 @@
 #*ISC Luis Alberto Landero Mendoza*
 
-*profesional profile*
+*Professional profile*
 
-It engineer, bachelors degree by ITM, instuto tecnológico de matamoros.
-I have 12 years of experience like desk side support on 
+It engineer, bachelor's degree by ITM, instituto tecnológico de matamoros.
+I have 12 years of experience like desk side support on
