@@ -1,4 +1,4 @@
-# Portfolio de Ciberseguridad & Análisis SOC
+# Portafolio de Ciberseguridad & Análisis SOC
 
 ¡Hola! Soy un **Ingeniero en Sistemas Computacionales** con más de 12 años de experiencia en soporte técnico y diagnóstico de infraestructura IT, especializado en **Análisis SOC, Respuesta a Incidentes y Seguridad de Redes**.
 
@@ -44,5 +44,6 @@ Poseo la certificación **Google Cybersecurity** y me enfoco en el monitoreo de 
 
 ## 📬 Contacto
 
-- **LinkedIn:** [Tu Enlace de LinkedIn]
-- **Correo:** tu-email@ejemplo.com
+- **LinkedIn:** https://www.linkedin.com/in/luis-landero-705531a9/
+- **Correo:** llandero@outlook.com
+- **correo:** iscllandero@gmail.com
