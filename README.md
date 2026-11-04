@@ -65,7 +65,7 @@ Este proyecto implementa un flujo automatizado de Detección y Respuesta (SOAR) 
 
 1. Clonar el repositorio:
    ```bash
-   git clone [https://github.com/tu-usuario/soc-soar-ransomware-lab.git](https://github.com/tu-usuario/soc-soar-ransomware-lab.git)
+   git clone [https://github.com/ISCLuisLandero/soc-soar-ransomware-lab.git](https://github.com/ISCLuisLandero/soc-soar-ransomware-lab.git)
    cd soc-soar-ransomware-lab
 
 
