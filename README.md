@@ -35,6 +35,42 @@ Poseo la certificación **Google Cybersecurity** y me enfoco en el monitoreo de 
 
 ---
 
+
+
+# SOC/SOAR Automated Response Pipeline for Ransomware (MITRE ATT&CK T1490)
+
+## 📌 Visión General del Proyecto
+Este proyecto implementa un flujo automatizado de Detección y Respuesta (SOAR) de extremo a extremo para mitigar y documentar intentos de inhibición de recuperación del sistema (**MITRE ATT&CK T1490**). El laboratorio simula un ataque ejecutado desde un endpoint Windows mediante macros y comandos ofuscados, detectado a través de un SIEM Splunk, y gestionado de forma autónoma por un listener desarrollado en FastAPI que genera informes forenses en PDF.
+
+---
+
+## 🛠️ Arquitectura y Tecnologías del Laboratorio
+* **Endpoint / Fuente de Telemetría:** Windows 10 con **Sysmon** (Monitoreo de procesos y EventCode 1).
+* **SIEM:** **Splunk Enterprise** (Correlación de eventos, reglas de alerta en tiempo real y webhooks).
+* **SOAR / Automatización:** **FastAPI** (Python) ejecutándose en Ubuntu Server.
+* **Generación de Evidencia:** Librería Python **ReportLab** para la compilación dinámica de reportes ejecutivos en PDF.
+
+---
+
+## 🔄 Flujo de Trabajo (End-to-End Workflow)
+1. **Simulación de Amenaza:** Se ejecuta una macro en Excel que invoca comandos para interactuar con utilidades del sistema (`vssadmin.exe`).
+2. **Ingesta de Telemetría:** Sysmon captura la ejecución del proceso y el Universal Forwarder de Splunk ingiere el log en tiempo real.
+3. **Detección (SIEM):** Una regla personalizada en Splunk evalúa la telemetría y dispara una alerta crítica basada en la técnica T1490.
+4. **Respuesta Automatizada (SOAR):** Splunk envía un Webhook HTTP POST hacia el servidor FastAPI.
+5. **Mitigación y Documentación:** El script deserializa la alerta, analiza el payload, ejecuta las rutinas de contención y genera un informe forense formal en formato PDF de manera instantánea.
+
+---
+
+## 🚀 Instalación y Ejecución del Servidor SOAR
+
+1. Clonar el repositorio:
+   ```bash
+   git clone [https://github.com/tu-usuario/soc-soar-ransomware-lab.git](https://github.com/tu-usuario/soc-soar-ransomware-lab.git)
+   cd soc-soar-ransomware-lab
+
+
+
+
 ## 📜 Certificaciones
 
 - **Google Cybersecurity Professional Certificate**
